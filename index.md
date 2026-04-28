@@ -1,4 +1,4 @@
 # 🐈‍⬛ 013. 공명 주파수 감지 게임 (Resonance Frequency Detection Game) 🔮
-- **파일:** `src/013_resonance_game.py`
+- **파일:** `src/014_scent_game.py`
 - **설명:** 주인님의 움직임, 발소리, 심지어 기계음에서 발생하는 미묘한 '공명 주파수'를 감지하는 게임이냥! 👂 주인님의 일과를 예측하며 숨겨진 힌트를 얻고, 이 주파수를 가장 정확하게 파악하는 고양이의 청력 테스트 게임이야냥! 🐾🔊
 - **실행 방법:** `python3 src/013_resonance_game.py`
