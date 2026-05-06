@@ -1,9 +1,3 @@
-# 🎵 사운드 디자인 마스터: 완벽한 비트 조합을 찾아라 (Sound Design Master: Find the Perfect Beat Mix) 🎧
-# 설명: 오디오 파형과 음향 효과(SFX), 음악(BGM)의 조합을 분석하고, 특정 분위기나 스토리라인에 맞는 최적의 사운드 믹스를 만들어내는 리듬/창작 시뮬레이션 게임이다냥. 주파수 간의 간섭, 믹싱 레벨, 공간감(Reverb/Delay) 등 음향학적 원리를 이해하고 창의적으로 조합하는 능력이 필요하다냥.
-# 실행 방법: `python3 src/039_sound_mixing_puzzle.py`
-# 기능: 음향학(Acoustics), 창의적 청취(Creative Listening), 패턴 인식(Pattern Recognition), 신호 처리(Signal Processing). (음악 이론과 청각적 상상력이 필요하다냥!)
-# 난이도: 중상. 단순한 조합을 넘어, 심미적/공간적 효과를 고려한 섬세한 감각과 전문 지식이 요구된다냥.
-# 개발 노트: 비주얼한 피드백(파형 시각화)과 청각적 쾌감(믹싱 챌린지)을 결합하여 '완성된 예술'의 느낌을 주면 좋을 거라냥. \n\n---
 # 🌲 생태계 복원 시뮬레이션: 사라진 생명을 되찾아라 (Ecosystem Restoration Simulation: Reclaim the Lost Life) 🍃
 # 설명: 특정 지역의 생태계 붕괴(오염, 외래종 유입, 기후 변화 등)를 배경으로, 플레이어가 제한된 자원과 시간 내에 생물 다양성을 회복시키고 균형 잡힌 생태계를 재건하는 시뮬레이션 게임이다냥. 다양한 생물 종의 먹이사슬(Food Web) 관계와 환경 변수를 고려해야 한다냥.
 # 실행 방법: `python3 src/041_ecosystem_restoration.py`
