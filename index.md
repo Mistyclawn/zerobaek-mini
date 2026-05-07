@@ -1,12 +1,6 @@
-# 🎵 사운드 디자인 마스터: 완벽한 비트 조합을 찾아라 (Sound Design Master: Find the Perfect Beat Mix) 🎧
-# 설명: 오디오 파형과 음향 효과(SFX), 음악(BGM)의 조합을 분석하고, 특정 분위기나 스토리라인에 맞는 최적의 사운드 믹스를 만들어내는 리듬/창작 시뮬레이션 게임이다냥. 주파수 간의 간섭, 믹싱 레벨, 공간감(Reverb/Delay) 등 음향학적 원리를 이해하고 창의적으로 조합하는 능력이 필요하다냥.
-# 실행 방법: `python3 src/039_sound_mixing_puzzle.py`
-# 기능: 음향학(Acoustics), 창의적 청취(Creative Listening), 패턴 인식(Pattern Recognition), 신호 처리(Signal Processing). (음악 이론과 청각적 상상력이 필요하다냥!)
-# 난이도: 중상. 단순한 조합을 넘어, 심미적/공간적 효과를 고려한 섬세한 감각과 전문 지식이 요구된다냥.
-# 개발 노트: 비주얼한 피드백(파형 시각화)과 청각적 쾌감(믹싱 챌린지)을 결합하여 '완성된 예술'의 느낌을 주면 좋을 거라냥. \n\n---
-# 🌲 생태계 복원 시뮬레이션: 사라진 생명을 되찾아라 (Ecosystem Restoration Simulation: Reclaim the Lost Life) 🍃
-# 설명: 특정 지역의 생태계 붕괴(오염, 외래종 유입, 기후 변화 등)를 배경으로, 플레이어가 제한된 자원과 시간 내에 생물 다양성을 회복시키고 균형 잡힌 생태계를 재건하는 시뮬레이션 게임이다냥. 다양한 생물 종의 먹이사슬(Food Web) 관계와 환경 변수를 고려해야 한다냥.
-# 실행 방법: `python3 src/041_ecosystem_restoration.py`
-# 기능: 생태학(Ecology), 자원 관리(Resource Management), 시스템 사고(Systems Thinking), 데이터 기반 추론(Data-Driven Reasoning). (지구가 아플 때 필요한 지식이다냥!)
-# 난이도: 중상. 단순히 종을 추가하는 것이 아니라, 종 간의 복잡한 상호의존성(Interdependency)을 이해하고 전체 시스템을 조화롭게 설계해야 한다냥. 🌿🌍
-# 개발 노트: 시각적으로는 나무와 꽃, 동물들이 서서히 번성하는 과정의 '성장'과 '균형'을 보여주는 것이 중요할 거라냥. 😌🌱
+# 🌌 성간 자원 채굴 최적화: 블랙홀 궤도를 탐험하라 (Interstellar Resource Mining Optimization: Explore the Black Hole Orbit) ☄️
+# 설명: 플레이어는 정해진 성계 내에서 희귀 광물 자원을 채굴하는 우주선을 조종한다냥. 블랙홀 근접 궤도, 소행성대, 가스 성운 등 다양한 환경 조건(중력 변화, 방사능, 궤도 역학)을 고려하여 가장 높은 효율로 자원을 채굴하고, 자원 운송 및 판매 경로를 최적화하는 퍼즐 게임이다냥.
+# 실행 방법: `python3 src/042_interstellar_resource_mining_puzzle.py`
+# 기능: 궤도 역학(Orbital Mechanics), 최적화 알고리즘(Optimization), 리스크 관리(Risk Management), 물리 기반 퍼즐(Physics-based Puzzle). (천문학적 지식과 뛰어난 계획력이 필요한 영역이다냥!)
+# 난이도: 상. 단순히 광물을 캐는 것을 넘어, 시간, 연료, 중력 등 여러 변수가 얽힌 '시스템 최적화' 사고가 요구된다냥. 🚀✨
+# 개발 노트: 시각적으로는 실시간 궤도 변화와 자원 축적 과정을 그래프와 3D 맵으로 보여주면 몰입감이 최고일 것 같다냥. 블랙홀 근처의 위험과 보상을 극적으로 표현하면 재미있을 거라냥.
