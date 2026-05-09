@@ -1,6 +1,6 @@
-# 046 - Wetland Restoration
+# 047 - Ancient Civilization Builder
 ## Description
-A detailed ecological simulation where players clean up and restore vital wetland ecosystems. Focuses on managing flora, fauna interactions, and water quality.
+A grand strategy simulation where players build and manage an early civilization. Focuses on resource gathering, city expansion, political stability, and architectural progress.
 ## Dependencies
-- Graphics: Advanced fluid dynamics simulation for water flow.
-- Logic: Micro-fauna interaction modeling and biodiversity scoring system.
+- Graphics: Procedural generation for diverse terrains and architectural styles.
+- Logic: Complex economic modeling (resource chains, population needs) and AI pathfinding for governance.
