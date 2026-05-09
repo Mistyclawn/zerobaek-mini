@@ -1,6 +1,6 @@
-# 045 - Stellar Kitchen
+# 046 - Wetland Restoration
 ## Description
-A cozy cooking simulation game where players manage a constellation of culinary dishes across a star-themed restaurant. Requires resource management and time-sensitive preparation.
+A detailed ecological simulation where players clean up and restore vital wetland ecosystems. Focuses on managing flora, fauna interactions, and water quality.
 ## Dependencies
-- Graphics: Shader implementation for nebulae patterns.
-- Logic: Pathfinding algorithm for waiters between cosmic tables.
+- Graphics: Advanced fluid dynamics simulation for water flow.
+- Logic: Micro-fauna interaction modeling and biodiversity scoring system.
