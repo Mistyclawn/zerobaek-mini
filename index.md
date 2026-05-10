@@ -1,6 +1,6 @@
-# 048 - Deep Sea Colony Survival
+# 049 - Orbital Habitat Sustainability
 ## Description
-Players manage a subterranean or abyssal research base, dealing with extreme pressure, bioluminescence, and unique deep-sea ecosystems. Focuses on life support, geological surveying, and biodiversity research.
+Players manage an enclosed, self-sustaining habitat in Earth's orbit. The primary challenges include balancing resource consumption, dealing with micro-meteoroid strikes, and maintaining complex life support (hydroponics, oxygen recycling).
 ## Dependencies
-- Graphics: Advanced fluid dynamics simulation (pressure, temperature), bioluminescent rendering.
-- Logic: Resource management (oxygen, energy), pressure-based structural integrity modeling, and biological simulation.
+- Graphics: Procedural generation of stellar backgrounds, low-gravity object interaction physics.
+- Logic: Closed-loop resource management (air, water, nutrient cycling), modular structural damage simulation, and crew psychology modeling.
