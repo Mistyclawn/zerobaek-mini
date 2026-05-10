@@ -1,6 +1,6 @@
-# 047 - Ancient Civilization Builder
+# 048 - Deep Sea Colony Survival
 ## Description
-A grand strategy simulation where players build and manage an early civilization. Focuses on resource gathering, city expansion, political stability, and architectural progress.
+Players manage a subterranean or abyssal research base, dealing with extreme pressure, bioluminescence, and unique deep-sea ecosystems. Focuses on life support, geological surveying, and biodiversity research.
 ## Dependencies
-- Graphics: Procedural generation for diverse terrains and architectural styles.
-- Logic: Complex economic modeling (resource chains, population needs) and AI pathfinding for governance.
+- Graphics: Advanced fluid dynamics simulation (pressure, temperature), bioluminescent rendering.
+- Logic: Resource management (oxygen, energy), pressure-based structural integrity modeling, and biological simulation.
