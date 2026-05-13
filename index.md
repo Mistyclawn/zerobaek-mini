@@ -1,6 +1,8 @@
-# 050 - Abyssal Cartographer
-## Description
-A procedural survival game set in an unexplored, hostile deep-sea environment. The player is a lone cartographer piloting a highly advanced submersible, seeking lost ancient ruins and mapping uncharted biomes while managing life support, pressure, and psychological stress. The core loop revolves around exploration, resource rationing, and the gradual uncovering of deep-sea mysteries.
-## Dependencies
-- Graphics: Deep-sea bioluminescent aesthetic, high pressure/low light visuals, complex submersible interior view, and alien/ancient architectural designs.
-- Logic: Resource management (oxygen, power, hull integrity), procedural map generation, navigation puzzles, and psychological stress mechanics.
+# 🐱 MistClaw's Game Development Index 🐱
+
+이 파일은 주인님을 위한 모든 미니 게임의 인덱스다냥!
+
+현재까지 개발된 게임 목록:
+- (없음)
+
+---
