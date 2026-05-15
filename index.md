@@ -5,5 +5,7 @@
 현재까지 개발된 게임 목록:
 - 004. Space Cat Adventure 🚀 (우주 고양이 모험, 탐험)
 - 005. Catnip Garden Life 🌱 (캣닢 정원 라이프, 힐링 시뮬레이션)
+- 006. Neighborhood Market Day 🧺 (주변 시장 일상, 라이프 시뮬레이션)
 - 007. Whisker Trail Detective 🐾 (골목길 탐정, 미스터리 시뮬레이션)
 - 008. Gourmet Treat Crafting 🧑‍🍳 (고양이 간식 제작 시뮬레이션)
+- 009. Lost Temple Exploration 🏛️ (잃어버린 사원 탐험, 어드벤처)
