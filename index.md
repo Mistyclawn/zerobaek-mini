@@ -8,4 +8,6 @@
 - 006. Neighborhood Market Day 🧺 (주변 시장 일상, 라이프 시뮬레이션)
 - 007. Whisker Trail Detective 🐾 (골목길 탐정, 미스터리 시뮬레이션)
 - 008. Gourmet Treat Crafting 🧑‍🍳 (고양이 간식 제작 시뮬레이션)
-- 009. Lost Temple Exploration 🏛️ (잃어버린 사원 탐험, 어드벤처)
+- 009. Dream Catcher Adventure ✨ (꿈을 쫓는 모험, 몽환적인 어드벤처)
+- 010. Forest Spirit Guardian 🌲 (숲의 정령 수호자, RPG 어드벤처)
+- 011. Sunset Photo Challenge 📸 (일몰 사진 챌린지, 관찰 및 예술 시뮬레이션)
