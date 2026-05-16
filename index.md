@@ -11,3 +11,4 @@
 - 009. Dream Catcher Adventure ✨ (꿈을 쫓는 모험, 몽환적인 어드벤처)
 - 010. Forest Spirit Guardian 🌲 (숲의 정령 수호자, RPG 어드벤처)
 - 011. Sunset Photo Challenge 📸 (일몰 사진 챌린지, 관찰 및 예술 시뮬레이션)
+- 012. Yarn Ball Disaster 🧶 (털실 공 재앙, 혼돈 관리 시뮬레이션)
