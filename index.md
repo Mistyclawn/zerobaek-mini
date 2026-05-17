@@ -12,4 +12,4 @@
 - 010. Forest Spirit Guardian 🌲 (숲의 정령 수호자, RPG 어드벤처)
 - 011. Sunset Photo Challenge 📸 (일몰 사진 챌린지, 관찰 및 예술 시뮬레이션)
 - 012. Yarn Ball Disaster 🧶 (털실 공 재앙, 혼돈 관리 시뮬레이션)
-- 013. Cozy Home Decor Collecting 🏡 (따뜻한 집 꾸미기, 수집 및 배치 시뮬레이션)
+- 014. Lost Lost Whisker Puzzle 🔍 (잃어버린 털뭉치 퍼즐, 힐링 퍼즐)
