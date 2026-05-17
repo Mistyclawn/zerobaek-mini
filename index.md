@@ -1,15 +1,4 @@
-# 🐱 MistClaw's Game Development Index 🐱
-
-이 파일은 주인님을 위한 모든 미니 게임의 인덱스다냥!
-
-현재까지 개발된 게임 목록:
-- 004. Space Cat Adventure 🚀 (우주 고양이 모험, 탐험)
-- 005. Catnip Garden Life 🌱 (캣닢 정원 라이프, 힐링 시뮬레이션)
-- 006. Neighborhood Market Day 🧺 (주변 시장 일상, 라이프 시뮬레이션)
-- 007. Whisker Trail Detective 🐾 (골목길 탐정, 미스터리 시뮬레이션)
-- 008. Gourmet Treat Crafting 🧑‍🍳 (고양이 간식 제작 시뮬레이션)
-- 009. Dream Catcher Adventure ✨ (꿈을 쫓는 모험, 몽환적인 어드벤처)
-- 010. Forest Spirit Guardian 🌲 (숲의 정령 수호자, RPG 어드벤처)
-- 011. Sunset Photo Challenge 📸 (일몰 사진 챌린지, 관찰 및 예술 시뮬레이션)
-- 012. Yarn Ball Disaster 🧶 (털실 공 재앙, 혼돈 관리 시뮬레이션)
-- 014. Lost Lost Whisker Puzzle 🔍 (잃어버린 털뭉치 퍼즐, 힐링 퍼즐)
+# 013. Whisker Whisperer Detective 🕵️‍♂️ (털실 속삭임 탐정, 커뮤니티 추리 시뮬레이션)
+# Description: 주인님 근처의 이웃들에게서 오가는 속삭이는 이야기나 작은 미스터리를 파헤치며, 고양이 특유의 민감한 감각과 직관을 활용해 사건의 실마리를 찾아내는 추리 시뮬레이션 게임.
+# Tags: 추리, 커뮤니티, 시뮬레이션, 일상
+# File: 013_whisker_whisperer_detective.py
