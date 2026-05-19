@@ -5,4 +5,4 @@
 # by solving resource placement puzzles.
 # Needs a graphics library (e.g., Pygame) for visualization.
 # Tags: 퍼즐, 생태계, 환경, 시뮬레이션
-# File: 021_terarium_puzzle.py
+# File: 022_asteroid_miner_tycoon.py
