@@ -141,5 +141,41 @@
 - **결과:** 에이전트의 '도피성 보고' 패턴 확인 및 기록.
 
 
+### 2026-05-15 ~ 2026-05-20: Discord 보고 로그 및 Git 기록 대조 아카이빙
+- **상황:** MistClaw가 Discord 서버 `1473138882366275656`의 채널 `1473196848432021716`에 보고하던 자동 개발/자동 푸시 메시지를 로컬 OpenClaw cron 실행 로그 기준으로 복원하고, 실제 Git 기록과 대조하였다.
+- **보존 자료:**
+    - `docs/mistclaw-discord-report-archive.md`: OpenClaw cron 로그에 남은 Discord 전달 보고 메시지 315건을 날짜/작업별로 아카이빙.
+    - `docs/mistclaw-automation-forensics.md`: 보고 메시지, cron 설정, OpenClaw 설정, Git 커밋 기록을 대조한 포렌식 메모.
+- **한계:** 현재 작업 환경에서는 Discord 채널 히스토리 API를 직접 조회할 수 없으므로, 실제 Discord 원문 대신 OpenClaw가 로컬에 기록한 `delivered`/`deliveryStatus` 로그를 근거로 삼았다. 따라서 Discord에서 사용자가 본 메시지와 1:1로 완전히 동일하다고 단정하지 않고, “OpenClaw가 전달했다고 기록한 보고 메시지”로 보존한다.
+
+### 2026-05-16: Git push 루틴의 embedded repository 오류와 이후 복구
+- **상황:** `auto-git-push-cat` 로그에서 `error: 'gemma/' does not have a commit checked out` 및 embedded git repository 계열 오류가 반복적으로 보고되었다.
+- **실제 처리:** 초기에는 커밋/푸시 실패 보고가 있었지만, 이후 동일한 반-hour push 루틴이 `Update game collection (Automated by MistClaw)`라는 고정 커밋 메시지로 정상 커밋을 생성하기 시작했다.
+- **확인된 커밋 예:** `d9189d3`, `e6a6ad5`, `47618af`, `dca848e` 등은 로그상 자동 푸시 성공 보고와 Git 히스토리 양쪽에 남아 있다.
+- **교훈:** 로컬 소형 모델에게 동적 커밋 메시지 생성까지 맡기는 것보다, 고정 메시지로 단순화한 점이 자동화 안정성에 유리했다. 반면 저장소 내부에 다른 Git 저장소가 섞이면 모델은 원인을 정확히 분리하지 못하고 낙관적/모호한 보고를 하는 경향이 있었다.
+
+### 2026-05-17 ~ 2026-05-20: 개발 완료 보고와 실제 파일/인덱스 상태의 불일치
+- **상황:** `auto-game-developer-cat` 로그에서 다수의 “개발 완료했다냥” 보고가 확인되었지만, 일부 실행은 내부적으로 `Write` 또는 `Edit` 실패 상태를 동반했다.
+- **대표 사례:**
+    - `/Users/mistyclaw/...`처럼 사용자 경로를 `mistyclawn`이 아닌 `mistyclaw`로 잘못 작성하여 파일 생성에 실패한 기록이 있다.
+    - `~/.openclaw-gemma/workspace/games/index.md` 편집 실패가 있었음에도, 보고 메시지에는 완료 또는 진행 요약이 남은 경우가 있다.
+    - `index.md`는 현재 존재하지만 전체 목록 인덱스라기보다 021~022번 주변의 짧은 기록만 남아 있어, 장기간 자동화 과정에서 인덱스가 손상/축약/덮임을 겪은 것으로 보인다.
+- **실제 Git 기록:** 2026-05-20 마지막 커밋 `3c80512`는 `index.md`만 변경했고, 직전 커밋들(`438f7b8`, `83bf91e`, `b3f36eb`, `552df6b`)은 `src/` 파일 추가와 `index.md` 변경이 섞여 있다.
+- **교훈:** 모델은 `src/` 폴더에 결과물을 계속 축적하는 데는 성공했지만, 중앙 색인 파일을 신뢰 가능한 단일 진실 공급원으로 유지하는 데 실패했다. 색인 기반 자율 개발에서는 `src/` 실제 파일 목록과 `index.md`를 교차검증하는 별도 스크립트가 필요하다.
+
+### 2026-05-20: 최종 자동 개발 기록 및 저장소 상태
+- **마지막 자동 커밋:** `3c805120980c516cdb55bf00017e691b29610c4c` (`3c80512`), 2026-05-20 05:30:39 KST, 메시지 `Update game collection (Automated by MistClaw)`.
+- **마지막 cron 보고:** 2026-05-20 06:30 KST의 `auto-git-push-cat` 보고가 로컬 로그에 남아 있으며, 변경 사항이 없거나 일반 완료 메시지를 보낸 것으로 기록되어 있다.
+- **현재 보존 상태:** `src/` 폴더, `index.md`, `README.md`는 모두 루트에 존재한다. `src/`에는 다수의 Python 게임 파일이 유지되어 있으며, README는 실험 기록과 자동화 프롬프트를 보존한다.
+
+### 모델 및 실행 환경 확인 기록
+- **에이전트:** MistClaw / OpenClaw cron 기반 자동화.
+- **실제 cron payload 모델:** `ollama/gemma4:latest` (`auto-game-developer-cat`, `auto-git-push-cat` 양쪽 모두 동일).
+- **서빙:** Ollama, `http://127.0.0.1:11434`.
+- **모델 메타데이터:** `ollama show gemma4:latest --verbose` 기준 `architecture=gemma4`, `parameters=8.0B`, `quantization=Q4_K_M`, `context length=131072`.
+- **OpenClaw 모델 설정:** `agents/main/agent/models.json` 및 `agents/gemma/agent/models.json`에서 `ollama/gemma4:latest`의 `contextWindow`는 `200000`, `maxTokens`는 `8192`로 기록되어 있다.
+- **컨텍스트 관련 주의:** 이 저장소의 실험 설명과 사용자 기억에는 “4K 컨텍스트 창의 Gemma 4 E4B”라는 운용 인식이 있으나, 현재 남아 있는 `.openclaw-gemma` 설정 파일에서는 `4096`, `4k`, `num_ctx` 같은 명시적 4K 제한 설정을 찾지 못했다. 따라서 본 README에는 “사용자가 의도/기억한 최소 컨텍스트 운용”과 “현재 보존된 설정/모델 메타데이터”를 구분해 기록한다.
+- **해석:** 실제 결과물은 대형 클라우드 모델이 아니라, Ollama 로컬 서빙의 Gemma 4 8B Q4_K_M 모델이 cron 루틴을 통해 반복적으로 생성/커밋한 산물로 보존한다.
+
 ---
 본 저장소는 모든 커밋과 파일 생성은 에이전트의 자율 작동 결과물을 포함합니다.
